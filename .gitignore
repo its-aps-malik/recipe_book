@@ -1,2 +1,4 @@
 recipe_book/all_secrets.py
 recipe_book/__pycache__/
+home/__pycache__/
+home/migrations/
