@@ -76,8 +76,11 @@ WSGI_APPLICATION = 'recipe_book.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'DJANGO_APP_TEST_DB',
+        'USER' : 'postgres',
+        'PASSWORD' : all_secrets.DB_PASSWORD,
+        'HOST' : 'localhost'
     }
 }
 
